@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# LearnIT
 
-First, run the development server:
+A curated directory of the best free IT learning resources on YouTube, organized by topic and built for developers who are tired of tutorial hell.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## The Problem
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Most beginners waste hours searching for where to start. They open YouTube, get overwhelmed by hundreds of results, jump between channels, and never actually make progress. This is called tutorial hell — and it kills momentum before it starts.
 
-## Learn More
+## The Solution
 
-To learn more about Next.js, take a look at the following resources:
+LearnIT gives you one clear starting point per topic. Every resource is hand-picked, vetted, and linked directly to the best free content available. No accounts, no paywalls, no distractions — just open a category and start learning.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Features
 
-## Deploy on Vercel
+- 12 technology categories: HTML, CSS, Tailwind CSS, JavaScript, TypeScript, Java, Python, C, Git & GitHub, React, Next.js, Docker, Kubernetes, Spring Boot, and Algorithmics
+- Curated YouTube videos and full courses for each category
+- Real-time search across all resources
+- Clean, fast, fully responsive design
+- No login required — open and use instantly
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js 14 (App Router) | Framework and routing |
+| TypeScript | Type safety across the entire codebase |
+| Tailwind CSS | Styling and responsive layout |
+| Vercel | Deployment and hosting |
+
+---
+
+
+
+### Prerequisites
+
+- Node.js 18 or higher
+- npm
+
+
+
+## Project Structure
+src/
+
+├── app/
+
+│   ├── layout.tsx          # Root layout with sidebar and header
+
+│   ├── page.tsx            # Homepage showing all resources
+
+│   └── [category]/
+
+│       └── page.tsx        # Dynamic category pages
+
+├── components/
+
+│   ├── Sidebar.tsx         # Fixed navigation sidebar
+
+│   ├── Header.tsx          # Top bar with search
+
+│   └── ResourceCard.tsx    # Individual resource card
+
+├── data/
+
+│   └── resources.ts        # All resource data
+
+└── types/
+
+└── index.ts            # TypeScript type definitions
+
+## Author
+
+**Ahmed Melliti** — Software Engineer
+
+Building tools that make learning easier and more accessible.
